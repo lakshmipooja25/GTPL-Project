@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [GTPLBankTestSuite]">
+  <listeners>
+    <listener class-name="com.qa.util.ExtentReport"/>
+  </listeners>
+  <test name="GTPLBankTestCase(failed)">
+    <classes>
+      <class name="com.qa.testcases.ManagerHomeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="NewCustomerLinkTest"/>
+        </methods>
+      </class> <!-- com.qa.testcases.ManagerHomeTest -->
+    </classes>
+  </test> <!-- GTPLBankTestCase(failed) -->
+</suite> <!-- Failed suite [GTPLBankTestSuite] -->

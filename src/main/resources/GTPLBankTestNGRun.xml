@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GTPLBankTestSuite" >
+	 <listeners>
+	 	<listener class-name="com.qa.util.ExtentReport"></listener>
+	 </listeners>
+ <test name="GTPLBankTestCase">
+ <classes>
+	 <class name="com.qa.testcases.LoginPageTest" />
+	 
+ </classes>
+ </test>
+</suite>
