@@ -22,7 +22,7 @@ public class ExtentReport implements IReporter{
 	private ExtentReports extent;
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
 		
-		extent = new ExtentReports("D:\\LAKSH\\Selenium\\Selenium Practice\\GTPL Project\\Reports\\Extent.html", true);
+		extent = new ExtentReports("E:\\LAKSH\\Selenium\\Selenium Practice\\GTPL Project\\Reports\\Extent.html", true);
 
 			for (ISuite suite : suites) {
 				Map<String, ISuiteResult> result = suite.getResults();

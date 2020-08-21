@@ -9,6 +9,7 @@ import java.util.Properties;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.ooxml.POIXMLProperties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -49,15 +50,15 @@ public class TestBase {
 	{
 		if(prop.getProperty("browser").equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "D:\\LAKSH\\Selenium\\Selenium Library\\Selenium Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "E:\\LAKSH\\Selenium\\Selenium Library\\Selenium Drivers\\chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
-			options.addExtensions(new File("D:\\LAKSH\\Selenium\\Selenium Library\\AD Blocker\\AdBlock.crx")); 
+			options.addExtensions(new File("E:\\LAKSH\\Selenium\\Selenium Library\\AD Blocker\\AdBlock.crx")); 
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 			options.merge(capabilities);
 			driver = new ChromeDriver(options);
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 			//driver.manage().deleteAllCookies();
 			String mainwindow=driver.getWindowHandle();
 			System.out.println(mainwindow);

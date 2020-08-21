@@ -3,12 +3,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="GTPLBankTestSuite" >
-	 <listeners>
+	<!-- <listeners>
 	 	<listener class-name="com.qa.util.ExtentReport"></listener>
-	 </listeners>
+	 </listeners>   --> 
  <test name="GTPLBankTestCase">
  <classes>
-	 <class name="com.qa.testcases.LoginPageTest" />
+	 <class name="com.qa.testcases.CredentialsPageTest" />
 	 
  </classes>
  </test>
